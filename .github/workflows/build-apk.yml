@@ -19,7 +19,7 @@ jobs:
           distribution: temurin
           java-version: '17'
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v3`r`n        with:`r`n          packages: platform-tools
       - name: Install Android build packages
         run: sdkmanager "platforms;android-37" "build-tools;35.0.0"
       - name: Build NIKA APK

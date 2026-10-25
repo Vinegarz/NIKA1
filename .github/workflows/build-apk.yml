@@ -23,7 +23,7 @@ jobs:
         with:
           packages: platform-tools
       - name: Install Android build packages
-        run: sdkmanager "platforms;android-37" "build-tools;35.0.0"
+        run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
       - name: Build NIKA APK
         run: ./gradlew assembleProdRelease --stacktrace
       - name: Upload NIKA APK
